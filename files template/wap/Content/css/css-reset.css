@@ -1,0 +1,87 @@
+﻿body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {    
+    margin:0;   
+    padding:0;   
+} 
+body{font-family: "Microsoft YaHei",SimHei,SimSun;font-size: 12px;}
+body{font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;}
+a,input,label,button,div{-webkit-tap-highlight-color:rgba(0,0,0,0);}/*wap点击发黑*/
+/* 显试指定font-size:100%;使继承body设定的字体大小 */
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal;}
+em,i{font-style: normal;}
+input,select,textarea,samp {font-size:100%;}
+caption,th{text-align: left;}
+abbr,acronym{border: 0;}
+input,button,select,textarea{outline:none}li{list-style:none}img{border:none;width: 100%;}textarea{resize:none}
+a{color:#000;text-decoration:none;outline:none}
+button{border: none;outline: none;}
+strong{font-weight: normal;}
+/* 清除浮动 */
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{*+height:1%}
+
+/* 定位 */
+.pr{position: relative;}
+.pa{position: absolute;}
+.fl{float: left;}
+.fr{float: right;}
+.r0{right: 0;}
+/* 字体 */
+.fwb{font-weight: bold;}
+.fcw{color: #fff;}
+/* 显示 */
+.hide{display: none! important;}
+/* 布局 */
+.mt5{margin-top: 5px;}
+
+.mt15{margin-top: 15px;}
+.mt20{margin-top: 20px;}
+.mt30{margin-top: 30px;}
+.mt37{margin-top: 37px;}
+.mt50{margin-top: 50px;}
+.mt76{margin-top: 76px;}
+.mt273{margin-top: 273px;}
+.mt491{margin-top: 491px;}
+.mr5{margin-right: 5px;}
+.mr15{margin-right: 15px;}
+.mb300{margin-bottom: 300px;}
+.ml15{margin-left: 15px;}
+.ml25{margin-left: 25px;}
+.ml674{margin-left: 674px;}
+
+.pt30{padding-top: 30px;}
+.pd30{padding-bottom: 30px;}
+
+.w1200{width: 1200px;}
+.mauto{margin: 0 auto;}
+.center{margin: 0 auto;width: 1200px;}
+/* 测试 */
+.bb{border: 1px solid #000;}
+/* 排版 */
+.omit{white-space:nowrap;overflow: hidden;text-overflow:ellipsis;}
+.tc{text-align: center;}
+.tr{text-align: right;}
+.show{display: block;}
+.hideword{text-indent:-9999px;}
+/* 字体 */
+.fz20{font-size: 20px;}
+.fz22{font-size: 22px;}
+.fz30{font-size: 30px;}
+/* 字体颜色 */
+.gray33{color: #333332;}
+.orangee4{color:#e44204;}
+
+/* 宽度 */
+.w183{width: 183px;}
+.w219{width: 219px;}
+.w245{width: 245px;}
+.w258{width: 251px;}
+.w300{width: 300px;}
+.w295{width: 295px;}
+.w326{width: 326px;}
+.w366{width: 366px;}
+.w395{width: 395px;}
+.w398{width: 398px;}
+.w419{width: 419px;}
+.w432{width: 432px;}
+.w543{width: 543px;}
+.w289{width: 289px;}

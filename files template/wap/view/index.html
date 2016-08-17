@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta name="format-detection" content="telephone=no">
+    <!--是否网页中的号码显示为拨号超链接-->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <!--iphone设备中的safari私有meta标签，它表示：允许全屏模式浏览；-->
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <!-- iphone的私有标签，它指定的iphone中safari顶端的状态条的样式； -->
+    <meta name="x5-fullscreen" content="false">
+    <meta name="full-screen" content="no">
+    <title>title</title>
+    <link rel="stylesheet" type="text/css" href="../Content/css/css-reset.css">
+    <script type="text/javascript">
+    !(function(doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function() {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';//默认html字体大小为 100px  屏幕宽度为640px
+            };
+            recalc();
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
