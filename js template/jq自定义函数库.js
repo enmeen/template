@@ -107,7 +107,7 @@ lazyimg类名 表示要延迟加载的元素
 dataimg类名 表示暂时存放图片路劲名的自定义属性,
 delayTime 图片淡入时间
 */
-function xyf_lazyload(lazyimg, dataimg,delayTime) {
+function xyf_lazyload(lazyimg, dataimg, delayTime) {
     var delayTime = delayTime || 200;
     var $lazyimg = $(lazyimg);
     var $height = $(window).height(); //获取屏幕高度
@@ -205,9 +205,44 @@ function autoHeight(a, c, d) {
          $this.addClass('vhide')；
          $this.css('display','none');
 */
-*
+
 
 //随机生成一个值.支持取值范围 random([min,max])
+function random(range) {
+    var max = Math.max(range[0], range[1]);
+    var min = Math.min(range[0], range[1]);
+    var diff = Math.random();
+    var val = Math.floor(diff * (max - min + 1) + min);
+    return val;
+}
+
+
+/*取整数 使用parseInt的话会检测的更多*/
+function getZ(num) {
+    var rounded;
+    rounded = (0.5 + num) | 0;
+    // A double bitwise not.
+    rounded = ~~(0.5 + num);
+    // Finally, a left bitwise shift.
+    rounded = (0.5 + num) << 0;
+
+    return rounded;
+}
+
+/*暴露揭示设计模式*/
+var util = (function() {
+    /*取整*/
+    function getZ(num) {
+        var rounded;
+        rounded = (0.5 + num) | 0;
+        // A double bitwise not.
+        rounded = ~~(0.5 + num);
+        // Finally, a left bitwise shift.
+        rounded = (0.5 + num) << 0;
+
+        return rounded;
+    }
+    /*随机获取范围整数*/
     function random(range) {
         var max = Math.max(range[0], range[1]);
         var min = Math.min(range[0], range[1]);
@@ -215,16 +250,8 @@ function autoHeight(a, c, d) {
         var val = Math.floor(diff * (max - min + 1) + min);
         return val;
     }
-
-
-/*取整数*/
-    function getZ(num){
-                   var rounded;
-                   rounded = (0.5 + num) | 0;
-                   // A double bitwise not.
-                   rounded = ~~ (0.5 + num);
-                   // Finally, a left bitwise shift.
-                   rounded = (0.5 + num) << 0;
-
-                   return rounded;
-               }
+    return {
+        getZ:getZ,
+        random:random
+    }
+})()
